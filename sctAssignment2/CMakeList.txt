@@ -1,0 +1,11 @@
+# Set the minimum version of CMake required
+cmake_minimum_required(VERSION 3.12)
+
+# Set the project name
+project(cppVariables)
+
+# Set the C++ standard to C++23
+set(CMAKE_CXX_STANDARD 23)
+
+# Add the executable target
+add_executable(cppVariables variables.cpp)
