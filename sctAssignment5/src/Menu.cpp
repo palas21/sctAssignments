@@ -1,6 +1,9 @@
 #include "Menu.hpp"
+#include <float.h>
 
 namespace menu{
+
+    MenuItem::MenuItem(){}
 
     std::string MenuItem::getName() const {
         return this->name;
@@ -58,6 +61,8 @@ namespace menu{
         this->savoriness = savoriness;
     }
 
+    Starter::Starter(){}
+
     Starter::Starter(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
         this->setPrice(price);
@@ -75,6 +80,8 @@ namespace menu{
     void Starter::setIsHot(bool isHot) {
         this->isHot = isHot;
     }
+
+    Salad::Salad(){}
 
     Salad::Salad(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
@@ -98,6 +105,8 @@ namespace menu{
         return this->pricePerTopping;
     }
 
+    MainCourse::MainCourse(){}
+
     MainCourse::MainCourse(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
         this->setPrice(price);
@@ -107,6 +116,8 @@ namespace menu{
         this->setBitterness(bitterness);
         this->setSavoriness(savoriness);
     }
+
+    Drink::Drink(){}
 
     Drink::Drink(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
@@ -142,6 +153,8 @@ namespace menu{
         this->isCarbonated = isCarbonated;
     }
 
+    Appetizer::Appetizer(){}
+
     Appetizer::Appetizer(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
         this->setPrice(price);
@@ -159,6 +172,8 @@ namespace menu{
     void Appetizer::setIsAfterMainCourse(const bool isAfterMainCourse) {
         this->isAfterMainCourse = isAfterMainCourse;
     }
+
+    Dessert::Dessert(){}
 
     Dessert::Dessert(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness) {
         this->setName(name);
@@ -653,13 +668,90 @@ namespace menu{
     }
 
     void MenuInterface::Suggesstion(float sweetness, float sourness, float saltiness, float bitterness, float savoriness){
-        std::cout << "Suggesstion using lse" << std::endl;
+        float maks_error = FLT_MAX;
+
+        std::shared_ptr<menu::Menu> suggestedMenu = std::make_shared<menu::Menu>();
+        std::shared_ptr<menu::Starter> starter = std::make_shared<menu::Starter>();
+        std::shared_ptr<menu::Salad> salad = std::make_shared<menu::Salad>();
+        std::shared_ptr<menu::MainCourse> mainCourse = std::make_shared<menu::MainCourse>();
+        std::shared_ptr<menu::Appetizer> appetizer = std::make_shared<menu::Appetizer>();
+        std::shared_ptr<menu::Drink> drink = std::make_shared<menu::Drink>();
+        std::shared_ptr<menu::Dessert> dessert = std::make_shared<menu::Dessert>();
+        
+        for(int i = 0; i < this->allMenu->getStarters().size(); i++){
+            for(int j = 0; j < this->allMenu->getSalads().size(); j++){
+                for(int k = 0; k < this->allMenu->getMainCourses().size(); k++){
+                    for(int l = 0; l < this->allMenu->getDrinks().size(); l++){
+                        for(int m = 0; m < this->allMenu->getAppetizers().size(); m++){
+                            for(int n = 0; n < this->allMenu->getDesserts().size() ; n++){
+                                float overallSweetness = (this->allMenu->getStarters()[i]->getSweetness() + this->allMenu->getSalads()[j]->getSweetness() + this->allMenu->getMainCourses()[k]->getSweetness() + this->allMenu->getDrinks()[l]->getSweetness() + this->allMenu->getAppetizers()[m]->getSweetness() + this->allMenu->getDesserts()[n]->getSweetness()) / 6;
+                                float overallSourness = (this->allMenu->getStarters()[i]->getSourness() + this->allMenu->getSalads()[j]->getSourness() + this->allMenu->getMainCourses()[k]->getSourness() + this->allMenu->getDrinks()[l]->getSourness() + this->allMenu->getAppetizers()[m]->getSourness() + this->allMenu->getDesserts()[n]->getSourness()) / 6;
+                                float overallSaltiness = (this->allMenu->getStarters()[i]->getSaltiness() + this->allMenu->getSalads()[j]->getSaltiness() + this->allMenu->getMainCourses()[k]->getSaltiness() + this->allMenu->getDrinks()[l]->getSaltiness() + this->allMenu->getAppetizers()[m]->getSaltiness() + this->allMenu->getDesserts()[n]->getSaltiness()) / 6;
+                                float overallBitterness = (this->allMenu->getStarters()[i]->getBitterness() + this->allMenu->getSalads()[j]->getBitterness() + this->allMenu->getMainCourses()[k]->getBitterness() + this->allMenu->getDrinks()[l]->getBitterness() + this->allMenu->getAppetizers()[m]->getBitterness() + this->allMenu->getDesserts()[n]->getBitterness()) / 6;
+                                float overallSavoriness = (this->allMenu->getStarters()[i]->getSavoriness() + this->allMenu->getSalads()[j]->getSavoriness() + this->allMenu->getMainCourses()[k]->getBitterness() + this->allMenu->getDrinks()[l]->getSavoriness() + this->allMenu->getAppetizers()[m]->getSavoriness() + this->allMenu->getDesserts()[n]->getSavoriness()) / 6;
+                                float errorRate = (overallSweetness - sweetness) * (overallSweetness - sweetness) + (overallSourness - sourness) * (overallSourness - sourness) + (overallSaltiness - saltiness) * (overallSaltiness - saltiness) + (overallBitterness - bitterness) * (overallBitterness - bitterness) + (overallSavoriness - savoriness) * (overallSavoriness - savoriness);
+                                if(errorRate < maks_error){
+                                    starter = this->allMenu->getStarters()[i];
+                                    salad = this->allMenu->getSalads()[j];
+                                    mainCourse = this->allMenu->getMainCourses()[k];
+                                    appetizer = this->allMenu->getAppetizers()[l];
+                                    drink = this->allMenu->getDrinks()[m];
+                                    dessert = this->allMenu->getDesserts()[n];
+                                    maks_error = errorRate;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        suggestedMenu->resetMenu();
+        suggestedMenu->addStarter(starter);
+        suggestedMenu->addSalad(salad);
+        suggestedMenu->addMainCourse(mainCourse);
+        suggestedMenu->addDrink(drink);
+        suggestedMenu->addAppetizer(appetizer);
+        suggestedMenu->addDessert(dessert);
+
+        std::cout << "Suggested Menu" << std::endl;
+        std::cout << "---------------------------------------------------------------" << std::endl;
+        std::cout << "Starters : " << std::endl;
+        for(int i = 0; i < suggestedMenu->getStarters().size(); i++){
+            std::cout << suggestedMenu->getStarters()[i]->getName() << " - " << suggestedMenu->getStarters()[i]->getPrice() << std::endl;
+        }
+        std::cout << "Salads : " << std::endl;
+        for(int i = 0; i < suggestedMenu->getSalads().size(); i++){
+            std::cout << suggestedMenu->getSalads()[i]->getName() << " - " << suggestedMenu->getSalads()[i]->getPrice() << std::endl;
+        }
+        std::cout << "Appetizers: " << std::endl;
+        for(int i = 0; i < suggestedMenu->getAppetizers().size(); i++){
+            if(!suggestedMenu->getAppetizers()[i]->getIsAfterMainCourse()){
+                std::cout << suggestedMenu->getAppetizers()[i]->getName() << " - " << suggestedMenu->getAppetizers()[i]->getPrice() << std::endl;
+            }
+        }
+        std::cout << "Main Courses : " << std::endl;
+        for(int i = 0; i < suggestedMenu->getMainCourses().size(); i++){
+            std::cout << suggestedMenu->getMainCourses()[i]->getName() << " - " << suggestedMenu->getMainCourses()[i]->getPrice() << std::endl;
+        }
+        std::cout << "Drinks : " << std::endl;
+        for(int i = 0; i < suggestedMenu->getDrinks().size(); i++){
+            std::cout << suggestedMenu->getDrinks()[i]->getName() << " - " << suggestedMenu->getDrinks()[i]->getPrice() << std::endl;
+        }
+        std::cout << "Desserts : " << std::endl;
+        for(int i = 0; i < suggestedMenu->getDesserts().size(); i++){
+            std::cout << suggestedMenu->getDesserts()[i]->getName() << " - " << suggestedMenu->getDesserts()[i]->getPrice() << std::endl;
+        }
+        std::cout << "Total Cost : " << suggestedMenu->getTotalCost() << std::endl;
+        std::cout << "Overall Sweetness : " << suggestedMenu->getOverallSweetness() << std::endl;
+        std::cout << "Overall Sourness : " << suggestedMenu->getOverallSourness() << std::endl;
+        std::cout << "Overall Saltiness : " << suggestedMenu->getOverallSaltiness() << std::endl;
+        std::cout << "Overall Bitterness : " << suggestedMenu->getOverallBitterness() << std::endl;
+        std::cout << "Overall Savoriness : " << suggestedMenu->getOverallSavoriness() << std::endl;
+        std::cout << "Error Rate : " << maks_error << std::endl;
     }
 
     void MenuInterface::Goodbye() {
         std::cout << "Goodbye" << std::endl;
         exit(0);
     }
-
-     
-    

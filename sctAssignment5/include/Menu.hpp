@@ -10,6 +10,7 @@ namespace menu{
 
     class MenuItem{
         public:
+            MenuItem();
             std::string getName() const;
             float getPrice() const;
             float getSweetness() const;
@@ -39,6 +40,7 @@ namespace menu{
 
     class Starter : public MenuItem {
         public:
+            Starter();
             Starter(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
             bool getIsHot() const;
             void setIsHot(bool isHot);
@@ -48,6 +50,7 @@ namespace menu{
 
     class Salad : public MenuItem {
         public:
+            Salad();
             Salad(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
             std::vector<std::string> getToppings() const;
             void setToppings(const std::vector<std::string>& toppings);
@@ -59,11 +62,13 @@ namespace menu{
 
     class MainCourse : public MenuItem {
         public:
+            MainCourse();
             MainCourse(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
     };
 
     class Drink : public MenuItem {
         public:
+            Drink();
             Drink(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
             bool getIsCarbonated() const;
             void setIsCarbonated(bool isCarbonated);
@@ -80,6 +85,7 @@ namespace menu{
 
     class Appetizer : public MenuItem {
         public:
+            Appetizer();
             Appetizer(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
             bool getIsAfterMainCourse() const;
             void setIsAfterMainCourse(bool isAfterMainCourse);
@@ -89,6 +95,7 @@ namespace menu{
 
     class Dessert : public MenuItem {
         public:
+            Dessert();
             Dessert(std::string name, float price, float sweetness, float sourness, float saltiness, float bitterness, float savoriness);
             bool getIsExtraChocolate() const;
             void setIsExtraChocolate(bool isExtraChocolate);
