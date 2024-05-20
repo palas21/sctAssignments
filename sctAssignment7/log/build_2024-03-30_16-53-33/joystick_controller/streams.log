@@ -1,0 +1,7 @@
+[0.087s] Invoking command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12
+[0.125s] [35m[1mConsolidate compiler generated dependencies of target turtlesim_client[0m
+[0.145s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o[0m
+[1.605s] gmake[2]: *** [CMakeFiles/turtlesim_client.dir/build.make:76: CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o] Interrupt
+[1.605s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_client.dir/all] Interrupt
+[1.605s] gmake: *** [Makefile:146: all] Interrupt
+[1.628s] Invoked command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12

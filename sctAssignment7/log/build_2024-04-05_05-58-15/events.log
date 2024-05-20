@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.000528] (-) JobUnselected: {'identifier': 'image_converter'}
+[0.000683] (joystick_controller) JobQueued: {'identifier': 'joystick_controller', 'dependencies': OrderedDict()}
+[0.000845] (joystick_controller) JobStarted: {'identifier': 'joystick_controller'}
+[0.007454] (joystick_controller) JobProgress: {'identifier': 'joystick_controller', 'progress': 'cmake'}
+[0.008040] (joystick_controller) JobProgress: {'identifier': 'joystick_controller', 'progress': 'build'}
+[0.008564] (joystick_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller', '--', '-j12', '-l12'], 'cwd': '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/:'), ('USER', 'palas21'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/:'), ('HOME', '/home/palas21'), ('OLDPWD', '/home/palas21/dev/git/sctAssignments/sctAssignment7/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2416'), ('SYSTEMD_EXEC_PID', '3001'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4840'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'palas21'), ('JOURNAL_STREAM', '8:23143'), ('_', '/home/palas21/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'palas21'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/palas21/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/palas21:@/tmp/.ICE-unix/2733,unix/palas21:/tmp/.ICE-unix/2733'), ('INVOCATION_ID', '5d25176bba1c42b3bc757a5544824a64'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e1c8b0ef-922f-46f2-b5a8-3dbdc9ac4c39'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.048065] (joystick_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target turtlesim_client\x1b[0m\n'}
+[0.067938] (joystick_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o\x1b[0m\n'}
+[0.099802] (-) TimerEvent: {}
+[0.200072] (-) TimerEvent: {}
+[0.300379] (-) TimerEvent: {}
+[0.400690] (-) TimerEvent: {}
+[0.501018] (-) TimerEvent: {}
+[0.601428] (-) TimerEvent: {}
+[0.701712] (-) TimerEvent: {}
+[0.802018] (-) TimerEvent: {}
+[0.902332] (-) TimerEvent: {}
+[1.003238] (-) TimerEvent: {}
+[1.103540] (-) TimerEvent: {}
+[1.203857] (-) TimerEvent: {}
+[1.304157] (-) TimerEvent: {}
+[1.404466] (-) TimerEvent: {}
+[1.504761] (-) TimerEvent: {}
+[1.605063] (-) TimerEvent: {}
+[1.705364] (-) TimerEvent: {}
+[1.806014] (-) TimerEvent: {}
+[1.906654] (-) TimerEvent: {}
+[2.007354] (-) TimerEvent: {}
+[2.107690] (-) TimerEvent: {}
+[2.207994] (-) TimerEvent: {}
+[2.308295] (-) TimerEvent: {}
+[2.408592] (-) TimerEvent: {}
+[2.508888] (-) TimerEvent: {}
+[2.609230] (-) TimerEvent: {}
+[2.709536] (-) TimerEvent: {}
+[2.809835] (-) TimerEvent: {}
+[2.910137] (-) TimerEvent: {}
+[3.010437] (-) TimerEvent: {}
+[3.110745] (-) TimerEvent: {}
+[3.211062] (-) TimerEvent: {}
+[3.311620] (-) TimerEvent: {}
+[3.411923] (-) TimerEvent: {}
+[3.512928] (-) TimerEvent: {}
+[3.613631] (-) TimerEvent: {}
+[3.714458] (-) TimerEvent: {}
+[3.814746] (-) TimerEvent: {}
+[3.915046] (-) TimerEvent: {}
+[4.015347] (-) TimerEvent: {}
+[4.115715] (-) TimerEvent: {}
+[4.215999] (-) TimerEvent: {}
+[4.316342] (-) TimerEvent: {}
+[4.416615] (-) TimerEvent: {}
+[4.516895] (-) TimerEvent: {}
+[4.617183] (-) TimerEvent: {}
+[4.717845] (-) TimerEvent: {}
+[4.818145] (-) TimerEvent: {}
+[4.918444] (-) TimerEvent: {}
+[5.018788] (-) TimerEvent: {}
+[5.119102] (-) TimerEvent: {}
+[5.219409] (-) TimerEvent: {}
+[5.319708] (-) TimerEvent: {}
+[5.420011] (-) TimerEvent: {}
+[5.520322] (-) TimerEvent: {}
+[5.620624] (-) TimerEvent: {}
+[5.720920] (-) TimerEvent: {}
+[5.821217] (-) TimerEvent: {}
+[5.921508] (-) TimerEvent: {}
+[6.021805] (-) TimerEvent: {}
+[6.122094] (-) TimerEvent: {}
+[6.222390] (-) TimerEvent: {}
+[6.322685] (-) TimerEvent: {}
+[6.422983] (-) TimerEvent: {}
+[6.523290] (-) TimerEvent: {}
+[6.623579] (-) TimerEvent: {}
+[6.723876] (-) TimerEvent: {}
+[6.824168] (-) TimerEvent: {}
+[6.924478] (-) TimerEvent: {}
+[7.024782] (-) TimerEvent: {}
+[7.125077] (-) TimerEvent: {}
+[7.225366] (-) TimerEvent: {}
+[7.325656] (-) TimerEvent: {}
+[7.425953] (-) TimerEvent: {}
+[7.526250] (-) TimerEvent: {}
+[7.626667] (-) TimerEvent: {}
+[7.727220] (-) TimerEvent: {}
+[7.827682] (-) TimerEvent: {}
+[7.927997] (-) TimerEvent: {}
+[8.028308] (-) TimerEvent: {}
+[8.128613] (-) TimerEvent: {}
+[8.228935] (-) TimerEvent: {}
+[8.316663] (joystick_controller) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlesim_client\x1b[0m\n'}
+[8.329017] (-) TimerEvent: {}
+[8.429285] (-) TimerEvent: {}
+[8.529611] (-) TimerEvent: {}
+[8.629957] (-) TimerEvent: {}
+[8.730258] (-) TimerEvent: {}
+[8.739762] (joystick_controller) StdoutLine: {'line': b'[100%] Built target turtlesim_client\n'}
+[8.750028] (joystick_controller) CommandEnded: {'returncode': 0}
+[8.773046] (joystick_controller) JobProgress: {'identifier': 'joystick_controller', 'progress': 'install'}
+[8.781489] (joystick_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller'], 'cwd': '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/:'), ('USER', 'palas21'), ('LC_TIME', 'tr_TR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/:'), ('HOME', '/home/palas21'), ('OLDPWD', '/home/palas21/dev/git/sctAssignments/sctAssignment7/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('MANAGERPID', '2416'), ('SYSTEMD_EXEC_PID', '3001'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4840'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'palas21'), ('JOURNAL_STREAM', '8:23143'), ('_', '/home/palas21/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'palas21'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/palas21/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/palas21:@/tmp/.ICE-unix/2733,unix/palas21:/tmp/.ICE-unix/2733'), ('INVOCATION_ID', '5d25176bba1c42b3bc757a5544824a64'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '31'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'tr_TR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:e1c8b0ef-922f-46f2-b5a8-3dbdc9ac4c39'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[8.789246] (joystick_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.789489] (joystick_controller) StdoutLine: {'line': b'-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/lib/joystick_controller/turtlesim_client\n'}
+[8.798802] (joystick_controller) StdoutLine: {'line': b'-- Set runtime path of "/home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/lib/joystick_controller/turtlesim_client" to ""\n'}
+[8.799094] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/package_run_dependencies/joystick_controller\n'}
+[8.799241] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/parent_prefix_path/joystick_controller\n'}
+[8.799322] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/ament_prefix_path.sh\n'}
+[8.799401] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/ament_prefix_path.dsv\n'}
+[8.799530] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/path.sh\n'}
+[8.799607] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/path.dsv\n'}
+[8.799677] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.bash\n'}
+[8.799746] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.sh\n'}
+[8.799812] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.zsh\n'}
+[8.799872] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.dsv\n'}
+[8.799939] (joystick_controller) StdoutLine: {'line': b'-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/package.dsv\n'}
+[8.799999] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/packages/joystick_controller\n'}
+[8.800072] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/cmake/joystick_controllerConfig.cmake\n'}
+[8.800130] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/cmake/joystick_controllerConfig-version.cmake\n'}
+[8.800185] (joystick_controller) StdoutLine: {'line': b'-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/package.xml\n'}
+[8.801482] (joystick_controller) CommandEnded: {'returncode': 0}
+[8.830342] (-) TimerEvent: {}
+[8.839220] (joystick_controller) JobEnded: {'identifier': 'joystick_controller', 'rc': 0}
+[8.839842] (-) EventReactorShutdown: {}

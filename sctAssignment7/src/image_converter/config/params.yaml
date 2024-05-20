@@ -1,0 +1,18 @@
+image_publisher:
+  ros__parameters:
+    video_path: "/home/palas21/Downloads/YARGI.mp4"
+    image_topic: "/image_raw"
+    frequency: 30
+
+image_subscriber: 
+  ros__parameters:
+    image_topic: "/image_raw"
+    blur_publish: true
+    blur_show: true
+    blur_topic: "/blur_image"
+    gray_publish: true
+    gray_show: true
+    gray_topic: "/gray_image"
+    canny_publish: true
+    canny_show: true
+    canny_topic: "/canny_image"

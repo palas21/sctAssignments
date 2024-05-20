@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target turtlesim_client[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o[0m
+[100%] [32m[1mLinking CXX executable turtlesim_client[0m
+[100%] Built target turtlesim_client
+-- Install configuration: ""
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/lib/joystick_controller/turtlesim_client
+-- Set runtime path of "/home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/lib/joystick_controller/turtlesim_client" to ""
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/package_run_dependencies/joystick_controller
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/parent_prefix_path/joystick_controller
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/ament_prefix_path.sh
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/path.sh
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/environment/path.dsv
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.bash
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.sh
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.zsh
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/local_setup.dsv
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/package.dsv
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/ament_index/resource_index/packages/joystick_controller
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/cmake/joystick_controllerConfig.cmake
+-- Up-to-date: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/cmake/joystick_controllerConfig-version.cmake
+-- Installing: /home/palas21/dev/git/sctAssignments/sctAssignment7/install/joystick_controller/share/joystick_controller/package.xml

@@ -1,0 +1,2 @@
+Invoking command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12
+Invoked command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12

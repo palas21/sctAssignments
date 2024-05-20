@@ -1,0 +1,10 @@
+[0.010s] Invoking command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12
+[0.058s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o[0m
+[0.268s] [01m[K/home/palas21/dev/git/sctAssignments/sctAssignment7/src/joystick_controller/src/turtlesim_client.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/Empty.h: No such file or directory
+[0.268s]     3 | #include [01;31m[K"std_msgs/Empty.h"[m[K
+[0.268s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[0.268s] compilation terminated.
+[0.362s] gmake[2]: *** [CMakeFiles/turtlesim_client.dir/build.make:76: CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o] Error 1
+[0.362s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_client.dir/all] Error 2
+[0.363s] gmake: *** [Makefile:146: all] Error 2
+[0.365s] Invoked command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/joystick_controller -- -j12 -l12
