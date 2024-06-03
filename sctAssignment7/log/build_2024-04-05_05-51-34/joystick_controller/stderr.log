@@ -1,7 +1,0 @@
-[01m[K/home/palas21/dev/git/sctAssignments/sctAssignment7/src/joystick_controller/src/turtlesim_client.cpp:[m[K In constructor ‘[01m[KTurtlesimClient::TurtlesimClient()[m[K’:
-[01m[K/home/palas21/dev/git/sctAssignments/sctAssignment7/src/joystick_controller/src/turtlesim_client.cpp:18:128:[m[K [01;31m[Kerror: [m[K‘[01m[KposeCallback[m[K’ is not a member of ‘[01m[KTurtlesimClient[m[K’
-   18 |             pose_subscriber_ = this->create_subscription<turtlesim::msg::Pose>("turtle1/pose", 10, std::bind(&TurtlesimClient::[01;31m[KposeCallback[m[K, this, std::placeholders::_1));
-      |                                                                                                                                [01;31m[K^~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/turtlesim_client.dir/build.make:76: CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_client.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

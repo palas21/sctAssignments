@@ -1,4 +1,0 @@
-Invoking command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter -- -j12 -l12
-Invoked command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter -- -j12 -l12
-Invoking command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter
-Invoked command in '/home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/palas21/dev/git/sctAssignments/sctAssignment7/build/image_converter

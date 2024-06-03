@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o[0m
-[01m[K/home/palas21/dev/git/sctAssignments/sctAssignment7/src/joystick_controller/src/turtlesim_client.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/Empty.hpp: No such file or directory
-    3 | #include [01;31m[K"std_msgs/Empty.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/turtlesim_client.dir/build.make:76: CMakeFiles/turtlesim_client.dir/src/turtlesim_client.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlesim_client.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2
